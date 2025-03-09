@@ -1,0 +1,23 @@
+.experiences {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 35vw;
+  height: 18vw;
+  border-radius: 1vw; */
+}
+
+.expImage {
+  width: 35vw;
+  height: 20vw;
+  border-radius: 1vw;
+}

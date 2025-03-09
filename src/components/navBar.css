@@ -1,0 +1,29 @@
+.navBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  font-size: 1.3vw;
+  /* margin-top: 1vw; */
+  margin-left: 2vw;
+}
+
+.navLinks {
+  position: absolute;
+  right: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1vw;
+  margin: 0;
+  padding: 0;
+}
