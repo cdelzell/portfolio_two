@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "./navBar.css";
 
 function Navbar() {
@@ -7,7 +8,9 @@ function Navbar() {
       <ul className="navLinks">
         {["experience", "personal", "leadership", "extras"].map((item) => (
           <p key={item}>
-            <a href={item}>{item}</a>
+            <Link to={item} smooth={true} duration={500}>
+              {item}
+            </Link>
           </p>
         ))}
       </ul>

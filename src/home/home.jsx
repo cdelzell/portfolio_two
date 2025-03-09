@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="page">
       <Navbar />
-      <img className="comp" src="./public/assets/comp2.png" />
+      <img className="comp" src="./assets/comp2.png" />
       {/* <p>of products, people, and experiences.</p> */}
       <p />
       <Experiences />
