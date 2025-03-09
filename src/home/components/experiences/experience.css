@@ -9,15 +9,37 @@
 
 .block {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 35vw;
-  height: 18vw;
-  border-radius: 1vw; */
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 1vw;
+  box-shadow: 0 0.3vw 1vw black;
+}
+
+.info {
+  width: 35vw;
+  height: 4vw;
+  background-color: white;
+  border-bottom-left-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .expImage {
   width: 35vw;
   height: 20vw;
-  border-radius: 1vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
+
+.opacityHandler {
+  opacity: 25%;
+}
+
+.expBlurb {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: absolute;
+  margin-top: -3vw;
+  font-size: 2vw;
+  font-weight: bold;
 }
