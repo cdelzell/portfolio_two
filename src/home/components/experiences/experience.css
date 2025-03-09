@@ -18,11 +18,25 @@
 }
 
 .info {
+  display: flex;
   width: 35vw;
   height: 4vw;
   background-color: white;
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
+}
+
+.info h2 {
+  font-size: 1.3vw;
+  margin: 0;
+  margin-left: 0.5vw;
+  font-style: italic;
+}
+
+.info p {
+  font-size: 1vw;
+  margin: 0;
+  margin-left: 0.3vw;
 }
 
 .expImage {
