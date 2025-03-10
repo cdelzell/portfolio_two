@@ -1,3 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20vw;
+}
+
 .experiences {
   display: flex;
   flex-direction: row;
@@ -6,7 +14,6 @@
   gap: 5vw;
   flex-wrap: wrap;
   margin-top: 20vw;
-  margin-bottom: 20vw;
 }
 
 .block {
@@ -63,15 +70,24 @@
 .experiences button {
   font-size: 15vw;
   background-color: transparent;
-  width: auto;
+  border-radius: 3vw;
+  width: 20vw;
   height: auto;
   display: flex;
-  justify-content: "center";
-  align-items: "center";
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0vw 0vw 0.5vw rgba(0, 0, 0, 0.3);
+
+  box-shadow: 0 0.4vw 0.5vw #999;
   padding: 0;
 }
 
 .experiences button:hover {
   outline: none;
   border-color: none;
+}
+
+.experiences button:active {
+  box-shadow: 0 0.23vw 0.5vw #666;
+  transform: translateY(0.2vw);
 }
