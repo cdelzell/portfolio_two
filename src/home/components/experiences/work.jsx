@@ -17,21 +17,23 @@ function Work() {
           name="Data Analytics Intern 🌽"
           blurb="My main project was creating a system to monitor all the data pipelines my team had running, alerting and protecting against data pipeline issues! This tool was used in all stand-up meetings."
           details="worked on a team of 8 with data pipelines, Power-BI, & data extraction/analysis."
+          time="May 2024 - August 2024"
         />
 
         <Experience
           image="nsaaBG"
           name="Design Studio Software Intern  🏀"
           blurb="One highlight of this experience was getting to learn more about the database world as we worked on moving from flat to relational data!"
-          details="worked on an Agile team of 6 to help deliver a website for officials to the NSAA.
-"
+          details="worked on an Agile team of 6 to help deliver a website for officials to the NSAA."
+          time="January 2024 - May 2024"
         />
 
         <Experience
-          image="ticket_to_ride"
+          image="raikes"
           name="Innovation Processes Teaching Assistant 🏔"
-          blurb="Essentially a crash course in how to create a full stack web application while getting to work with a great team!"
+          blurb="I helped with this class in the fall of 2023, and am returning for the fall of 2024! This class is a great way to teach entreprenuership, and has been a highlight of my college career."
           details="worked with 40 students on start-up style projects from ideation to pre-production."
+          time="Fall 2024, Fall 2025"
         />
       </div>
     </div>

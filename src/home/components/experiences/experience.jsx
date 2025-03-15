@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./experience.css";
 
-function Experience({ image, name, details, blurb }) {
+function Experience({ image, name, details, blurb, time }) {
   const [shareMore, setShareMore] = useState(false);
   const [opacityHandler, setOpacityHandler] = useState("");
 
@@ -35,8 +35,13 @@ function Experience({ image, name, details, blurb }) {
         <></>
       )}
       <div className="info">
-        <h2>{name}</h2>
-        <p>{details}</p>
+        <div className="nameTime">
+          <h2>{name}</h2>
+          <h4>{time}</h4>
+        </div>
+        <div className="details">
+          <p>{details}</p>
+        </div>
       </div>
     </div>
   );
