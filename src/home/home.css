@@ -25,3 +25,8 @@
 .workBanner h1 {
   color: white;
 }
+
+.notion img {
+  width: 20vw;
+  height: 20vw;
+}

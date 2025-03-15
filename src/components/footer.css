@@ -1,0 +1,59 @@
+.footer {
+  width: 100vw;
+  height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 4vw;
+  border-top: black;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.email {
+  position: absolute;
+  left: 1vw;
+}
+
+.contact a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact p {
+  font-size: 1.5vw;
+  color: #000000a9;
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  padding: 2vw;
+  box-sizing: border-box;
+}
+
+.icons img {
+  position: relative;
+  max-width: 3vw;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.contact a .p:hover {
+  color: var(--secondary-color);
+}
+
+.icons {
+  display: flex;
+  gap: 2vw;
+}
+
+.phone {
+  position: absolute;
+  right: 2vw;
+}

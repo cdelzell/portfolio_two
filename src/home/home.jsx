@@ -2,6 +2,7 @@ import Navbar from "../components/navBar";
 import PersonalProjects from "./components/experiences/personalProjects";
 import Work from "./components/experiences/work";
 import Leadership from "./components/experiences/leadership";
+import Footer from "../components/footer";
 import "./home.css";
 
 function Home() {
@@ -26,6 +27,10 @@ function Home() {
       <div style={{ marginTop: "-30vw" }}>
         <Leadership />
       </div>
+      <div className="notion">
+        <img src="./public/assets/notion.png" />
+      </div>
+      <Footer />
     </div>
   );
 }
