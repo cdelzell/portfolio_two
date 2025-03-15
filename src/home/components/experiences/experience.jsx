@@ -28,7 +28,7 @@ function Experience({ image, name, details, blurb }) {
       />
       {shareMore ? (
         <div className="expImage expBlurb" style={{}}>
-          <p style={{ padding: "1vw" }}>{blurb}</p>
+          <p style={{ marginLeft: ".3vw", marginTop: ".3vw" }}>{blurb}</p>
         </div>
       ) : (
         <></>

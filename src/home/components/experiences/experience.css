@@ -6,16 +6,6 @@
   margin-bottom: 20vw;
 }
 
-.experiences {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5vw;
-  flex-wrap: wrap;
-  margin-top: 20vw;
-}
-
 .block {
   display: flex;
   flex-direction: column;
@@ -26,29 +16,29 @@
 
 .info {
   display: flex;
-  width: 35vw;
-  height: 4vw;
+  width: 50vw;
+  height: 6vw;
   background-color: white;
   border-bottom-left-radius: 1vw;
   border-bottom-right-radius: 1vw;
 }
 
 .info h2 {
-  font-size: 1.3vw;
+  font-size: 2vw;
   margin: 0;
-  margin-left: 0.5vw;
+  margin-left: 1vw;
   font-style: italic;
 }
 
 .info p {
-  font-size: 1vw;
+  font-size: 1.7vw;
   margin: 0;
   margin-left: 0.3vw;
 }
 
 .expImage {
-  width: 35vw;
-  height: 20vw;
+  width: 50vw;
+  height: 27vw;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
 }
@@ -60,10 +50,9 @@
 .expBlurb {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
   position: absolute;
-  margin-top: -3vw;
-  font-size: 2vw;
+  font-size: 2.3vw;
   font-weight: bold;
 }
 
@@ -77,7 +66,6 @@
   justify-content: center;
   align-items: center;
   text-shadow: 0vw 0vw 0.5vw rgba(0, 0, 0, 0.3);
-
   box-shadow: 0 0.4vw 0.5vw #999;
   padding: 0;
 }
@@ -90,4 +78,74 @@
 .experiences button:active {
   box-shadow: 0 0.23vw 0.5vw #666;
   transform: translateY(0.2vw);
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  margin-top: 20vw;
+}
+
+@media (min-width: 600px) {
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-top: 20vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    flex-wrap: wrap;
+    margin-top: 20vw;
+  }
+
+  .expImage {
+    width: 35vw;
+    height: 20vw;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+  .expBlurb {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  .info {
+    display: flex;
+    width: 35vw;
+    height: 4vw;
+    background-color: white;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+
+  .info h2 {
+    font-size: 1.3vw;
+    margin: 0;
+    margin-left: 1vw;
+    font-style: italic;
+  }
+
+  .info p {
+    font-size: 1vw;
+    margin: 0;
+    margin-left: 0.3vw;
+  }
 }
