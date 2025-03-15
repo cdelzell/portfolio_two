@@ -1,6 +1,7 @@
 import Navbar from "../components/navBar";
 import PersonalProjects from "./components/experiences/personalProjects";
 import Work from "./components/experiences/work";
+import Leadership from "./components/experiences/leadership";
 import "./home.css";
 
 function Home() {
@@ -12,10 +13,18 @@ function Home() {
       <p />
       <PersonalProjects />
       <div className="workBanner">
-        <h1>work</h1>
+        <h1 style={{ fontStyle: "italic", fontSize: "6vw" }}>
+          work experience
+        </h1>
       </div>
       <div style={{ marginTop: "-30vw" }}>
         <Work />
+      </div>
+      <div className="workBanner">
+        <h1 style={{ fontStyle: "italic", fontSize: "6vw" }}>leadership</h1>
+      </div>
+      <div style={{ marginTop: "-30vw" }}>
+        <Leadership />
       </div>
     </div>
   );

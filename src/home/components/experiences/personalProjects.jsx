@@ -3,9 +3,10 @@ import Experience from "./experience";
 import "./experience.css";
 
 function PersonalProjects() {
-  const [hideTrain, setHideTrain] = useState(true);
-  const [hideStar, setHideStar] = useState(true);
-  const [hideHammer, setHideHammer] = useState(true);
+  const [hideTrain, setHideTrain] = useState(false);
+  const [hideStar, setHideStar] = useState(false);
+  const [hideHammer, setHideHammer] = useState(false);
+  const [hideWrench, setHideWrench] = useState(false);
 
   const handleClick = (hideObject, setHideObject) => {
     if (!hideObject) {
@@ -52,6 +53,20 @@ function PersonalProjects() {
           />
         ) : (
           <button onClick={() => handleClick(hideHammer, setHideHammer)}>
+            🔨
+          </button>
+        )}
+
+        {hideWrench ? (
+          <Experience
+            image="portfolio_original"
+            name="My second portfolio 🔨"
+            blurb="This was my return to front-end after getting a lot more experience, and was a fun design process as I thought through how to make a website that I really liked rather than just was able to scrape together :)"
+            details="a portfolio webside in React, HTML, and CSS."
+            time="March 2025 - April 2025"
+          />
+        ) : (
+          <button onClick={() => handleClick(hideWrench, setHideWrench)}>
             🔨
           </button>
         )}

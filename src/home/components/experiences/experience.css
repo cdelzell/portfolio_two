@@ -8,6 +8,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .block {
@@ -90,7 +92,7 @@
   justify-content: left;
   align-items: flex-start;
   position: absolute;
-  font-size: 2.3vw;
+  font-size: 3vw;
   font-weight: bold;
 }
 
@@ -111,6 +113,7 @@
 .experiences button:hover {
   outline: none;
   border-color: none;
+  box-shadow: 0 0.23vw 0.5vw #666;
 }
 
 .experiences button:active {
