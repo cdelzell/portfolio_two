@@ -2,7 +2,7 @@ import { useState } from "react";
 import Experience from "./experience";
 import "./experience.css";
 
-function Experiences() {
+function PersonalProjects() {
   const [hideTrain, setHideTrain] = useState(true);
   const [hideStar, setHideStar] = useState(true);
   const [hideHammer, setHideHammer] = useState(true);
@@ -57,4 +57,4 @@ function Experiences() {
   );
 }
 
-export default Experiences;
+export default PersonalProjects;

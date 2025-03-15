@@ -1,5 +1,6 @@
 import Navbar from "../components/navBar";
-import Experiences from "./components/experiences/experiences";
+import PersonalProjects from "./components/experiences/personalProjects";
+import Work from "./components/experiences/work";
 import "./home.css";
 
 function Home() {
@@ -9,7 +10,13 @@ function Home() {
       <img className="comp" src="./assets/smallComp.png" />
       {/* <p>of products, people, and experiences.</p> */}
       <p />
-      <Experiences />
+      <PersonalProjects />
+      <div className="workBanner">
+        <h1>work</h1>
+      </div>
+      <div style={{ marginTop: "-30vw" }}>
+        <Work />
+      </div>
     </div>
   );
 }

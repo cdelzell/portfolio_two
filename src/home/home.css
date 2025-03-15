@@ -12,3 +12,16 @@
   width: 60vw;
   margin-top: 10vw;
 }
+
+.workBanner {
+  width: 100vw;
+  height: 30vw;
+  background-color: rgba(106, 65, 57, 0.445);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.workBanner h1 {
+  color: white;
+}

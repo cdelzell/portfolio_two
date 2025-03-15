@@ -31,12 +31,20 @@
 }
 
 .info p {
-  font-size: 1.7vw;
-  margin: 0;
-  margin-left: 0.3vw;
+  font-size: 1.4vw;
+  margin-top: 0.4vw;
+  margin-left: 1vw;
 }
 
 .expImage {
+  width: 50vw;
+  height: 27vw;
+  background-color: white;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+}
+
+.expImageBlurb {
   width: 50vw;
   height: 27vw;
   border-top-left-radius: 1vw;
@@ -48,6 +56,10 @@
 }
 
 .expBlurb {
+  width: 50vw;
+  height: 27vw;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
   display: flex;
   justify-content: left;
   align-items: flex-start;
@@ -112,6 +124,14 @@
   }
 
   .expImage {
+    width: 35vw;
+    height: 20vw;
+    background-color: white;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+  .expImageBlurb {
     width: 35vw;
     height: 20vw;
     border-top-left-radius: 1vw;
