@@ -10,8 +10,8 @@ function Work() {
   };
 
   return (
-    <div className="wrapper">
-      <div className="experiences" id="experience">
+    <div className="wrapper" id="work">
+      <div className="experiences">
         <Experience
           image="scoularBuild"
           name="Data Analytics Intern 🌽"

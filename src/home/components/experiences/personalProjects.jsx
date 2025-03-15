@@ -14,8 +14,8 @@ function PersonalProjects() {
   };
 
   return (
-    <div className="wrapper">
-      <div className="experiences" id="experience">
+    <div className="wrapper" id="projects">
+      <div className="experiences">
         {hideTrain ? (
           <Experience
             image="ticket_to_ride"

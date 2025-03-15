@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navBar">
       <h1 className="name">c l a r a &nbsp;&nbsp;d e l z e l l</h1>
       <ul className="navLinks">
-        {["experience", "personal", "leadership", "extras"].map((item) => (
+        {["projects", "work", "leadership", "extras"].map((item) => (
           <p key={item}>
             <Link to={item} smooth={true} duration={500}>
               {item}
