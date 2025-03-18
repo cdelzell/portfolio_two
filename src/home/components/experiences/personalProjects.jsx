@@ -3,10 +3,10 @@ import Experience from "./experience";
 import "./experience.css";
 
 function PersonalProjects() {
-  const [hideTrain, setHideTrain] = useState(false);
-  const [hideStar, setHideStar] = useState(false);
-  const [hideHammer, setHideHammer] = useState(false);
-  const [hideWrench, setHideWrench] = useState(false);
+  const [hideTrain, setHideTrain] = useState(true);
+  const [hideStar, setHideStar] = useState(true);
+  const [hideHammer, setHideHammer] = useState(true);
+  const [hideWrench, setHideWrench] = useState(true);
 
   const handleClick = (hideObject, setHideObject) => {
     if (!hideObject) {
