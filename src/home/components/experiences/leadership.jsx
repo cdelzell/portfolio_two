@@ -37,7 +37,7 @@ function Leadership() {
         />
 
         <Experience
-          image="raikes"
+          image="nhri"
           name="NHRI Leadership Mentor"
           blurb="I helped with this class in the fall of 2023, and am returning for the fall of 2024! This class is a great way to teach entreprenuership, and has been a highlight of my college career."
           details="selected as a mentor in the NHRI class of 2023. meet weekly with a high school mentee and attend weekly project meetings."

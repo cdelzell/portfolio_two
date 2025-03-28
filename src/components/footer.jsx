@@ -18,28 +18,28 @@ function Footer() {
             target="_blank"
             title="LinkedIn"
           >
-            <img src="./public/assets/linkedin.svg" alt="LinkedIn" />
+            <img src="/assets/linkedin.svg" alt="LinkedIn" />
           </a>
           <a
             href="https://github.com/cdelzell?tab=repositories"
             target="_blank"
             title="Github"
           >
-            <img src="./public/assets/github.svg" alt="Github" />
+            <img src="/assets/github.svg" alt="Github" />
           </a>
           <a
             href="https://claradelzellresume.tiiny.site/"
             target="_blank"
             title="Resume"
           >
-            <img src="./public/assets/file.svg" alt="Resume" />
+            <img src="/assets/file.svg" alt="Resume" />
           </a>
           <a
             href="https://www.instagram.com/claradelzell/"
             target="_blank"
             title="Instagram"
           >
-            <img src="./public/assets/instagram.svg" alt="Instagram" />
+            <img src="/assets/instagram.svg" alt="Instagram" />
           </a>
         </div>
 

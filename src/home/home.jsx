@@ -28,7 +28,7 @@ function Home() {
         <Leadership />
       </div>
       <div className="notion">
-        <img src="./public/assets/notion.png" />
+        <img src="/assets/notion.png" />
       </div>
       <Footer />
     </div>
