@@ -3,6 +3,11 @@ import PersonalProjects from "./components/experiences/personalProjects";
 import Work from "./components/experiences/work";
 import Leadership from "./components/experiences/leadership";
 import Footer from "../components/footer";
+import notion from "/assets/notion.png";
+import arrow_down from "/assets/arrow-down.png";
+import instagram from "/assets/instagram.svg";
+import linkedin from "/assets/linkedin.svg";
+import github from "/assets/github.svg";
 import "./home.css";
 
 function Home() {
@@ -28,7 +33,7 @@ function Home() {
         <Leadership />
       </div>
       <div className="notion">
-        <img src="/assets/notion.png" />
+        <img src={notion} />
       </div>
       <Footer />
     </div>

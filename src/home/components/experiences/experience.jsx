@@ -22,11 +22,7 @@ function Experience({ image, name, details, blurb, time }) {
       onMouseLeave={() => handleHover()}
     >
       {shareMore ? <div className="expImage expBlurb" style={{}}></div> : <></>}
-      <img
-        className={`expImage ${opacityHandler}`}
-        src={`/assets/experiences/${image}.png`}
-        alt={name}
-      />
+      <img className={`expImage ${opacityHandler}`} src={image} alt={name} />
       {shareMore ? (
         <div className="expImageBlurb expBlurb" style={{}}>
           <p style={{ marginLeft: ".3vw", marginTop: ".3vw" }}>{blurb}</p>

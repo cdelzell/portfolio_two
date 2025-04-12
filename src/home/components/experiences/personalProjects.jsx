@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Experience from "./experience";
+import ticket from "/assets/experiences/ticket_to_ride.png";
+import bright from "/assets/experiences/bright.png";
+import portfolio1 from "/assets/experiences/portfolio_original.png";
+import portfolio2 from "/assets/experiences/raikes.png";
+
 import "./experience.css";
 
 function PersonalProjects() {
@@ -19,7 +24,7 @@ function PersonalProjects() {
       <div className="experiences">
         {hideTrain ? (
           <Experience
-            image="ticket_to_ride"
+            image={ticket}
             name="Ticket to Ride 🚂"
             blurb="Essentially a crash course in how to create a full stack web application while getting to work with a great team!"
             details="a full stack web application in React and Typescript with multi-player support."
@@ -33,7 +38,7 @@ function PersonalProjects() {
 
         {hideStar ? (
           <Experience
-            image="bright"
+            image={bright}
             name="A Brighter Future ⭐"
             blurb="I worked on a team of four at a 24-hour hackathon to make this project. Our vision was a community-based galaxy simulation site, and we successfuly deployed the product!"
             details="a full stack web application in React and Javascript with multi-player support."
@@ -45,7 +50,7 @@ function PersonalProjects() {
 
         {hideHammer ? (
           <Experience
-            image="portfolio_original"
+            image={portfolio1}
             name="My first portfolio 🔨"
             blurb="This was my first venture into front-end, and taught me the basics. It was the first time I realized how complex design really is, but also how much fun creating web applications can be!"
             details="a portfolio webside in HTML, CSS, and Javascript."
@@ -59,7 +64,7 @@ function PersonalProjects() {
 
         {hideWrench ? (
           <Experience
-            image="portfolio_original"
+            image={portfolio2}
             name="My second portfolio 🔨"
             blurb="This was my return to front-end after getting a lot more experience, and was a fun design process as I thought through how to make a website that I really liked rather than just was able to scrape together :)"
             details="a portfolio webside in React, HTML, and CSS."

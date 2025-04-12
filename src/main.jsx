@@ -1,5 +1,4 @@
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "/src/home/home.jsx";
@@ -7,7 +6,7 @@ import "./index.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio_two">
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
@@ -16,5 +15,10 @@ function App() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
 export default App;
