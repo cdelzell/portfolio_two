@@ -50,6 +50,22 @@ function MacScreen({ activeKey, experiences }) {
             src={experience.pdfSrc}
             title={experience.name}
           />
+        ) : experience?.type === 'link' ? (
+          <div className={`mac-link-card mac-link-card--${experience.platform}`}>
+            <div className="mac-link-header">
+              <span className="mac-link-platform">{experience.platform === 'linkedin' ? 'in' : experience.platform === 'github' ? '⌥' : ''}</span>
+              <span className="mac-link-name">{experience.handle}</span>
+            </div>
+            <p className="mac-link-tagline">{experience.tagline}</p>
+            <a
+              className="mac-link-btn"
+              href={experience.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit {experience.name} →
+            </a>
+          </div>
         ) : experience ? (
           <div className="mac-content">
             <img className="mac-img" src={experience.image} alt={experience.name} />

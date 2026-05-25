@@ -80,6 +80,94 @@
   50%       { opacity: 0; }
 }
 
+/* ── Link card view ── */
+.mac-link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(12px, 2vw, 24px);
+  width: 100%;
+  height: 100%;
+  padding: clamp(24px, 4vw, 60px);
+  box-sizing: border-box;
+}
+
+.mac-link-card--linkedin { background: #f3f6f8; }
+.mac-link-card--github   { background: #0d1117; }
+
+.mac-link-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mac-link-platform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(36px, 4vw, 56px);
+  height: clamp(36px, 4vw, 56px);
+  border-radius: 8px;
+  font-size: clamp(16px, 2vw, 28px);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.mac-link-card--linkedin .mac-link-platform {
+  background: #0A66C2;
+  color: #fff;
+}
+
+.mac-link-card--github .mac-link-platform {
+  background: #fff;
+  color: #24292e;
+}
+
+.mac-link-name {
+  font-size: clamp(18px, 2.5vw, 36px);
+  font-weight: 700;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.mac-link-card--linkedin .mac-link-name { color: #191919; }
+.mac-link-card--github   .mac-link-name { color: #e6edf3; }
+
+.mac-link-tagline {
+  font-size: clamp(12px, 1.2vw, 18px);
+  margin: 0;
+  line-height: 1.5;
+  max-width: 55ch;
+}
+
+.mac-link-card--linkedin .mac-link-tagline { color: #444; }
+.mac-link-card--github   .mac-link-tagline { color: #8b949e; }
+
+.mac-link-btn {
+  display: inline-block;
+  padding: clamp(8px, 0.8vw, 12px) clamp(16px, 1.6vw, 24px);
+  border-radius: 6px;
+  font-size: clamp(12px, 1.1vw, 16px);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.mac-link-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.mac-link-card--linkedin .mac-link-btn {
+  background: #0A66C2;
+  color: #fff;
+}
+
+.mac-link-card--github .mac-link-btn {
+  background: #238636;
+  color: #fff;
+}
+
 /* ── PDF view ── */
 .mac-pdf {
   width: 100%;

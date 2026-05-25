@@ -14,6 +14,24 @@ export const EXPERIENCES = {
     pdfSrc: `${import.meta.env.BASE_URL}resume.pdf`,
     category: 'resume',
   },
+  L: {
+    name: 'LinkedIn',
+    type: 'link',
+    platform: 'linkedin',
+    url: 'https://www.linkedin.com/in/claradelzell/',
+    handle: 'claradelzell',
+    tagline: 'Software Developer · Raikes School, University of Nebraska',
+    category: 'social',
+  },
+  G: {
+    name: 'GitHub',
+    type: 'link',
+    platform: 'github',
+    url: 'https://github.com/cdelzell?tab=repositories',
+    handle: 'cdelzell',
+    tagline: 'Building full-stack web apps and exploring new tech',
+    category: 'social',
+  },
   T: {
     name: 'Ticket to Ride 🚂',
     blurb: 'Essentially a crash course in how to create a full stack web application while getting to work with a great team!',
@@ -114,6 +132,7 @@ export const CATEGORY_KEYS = {
   projects: ['T', 'B', 'O', 'P'],
   work: ['D', 'N', 'I'],
   leadership: ['S', 'M', 'K', 'H'],
+  links: ['L', 'G'],
 };
 
 export const HOT_KEYS = new Set(Object.keys(EXPERIENCES));
