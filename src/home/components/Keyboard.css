@@ -1,0 +1,111 @@
+/* Key size scales with the keyboard container.
+   Row 1 has 10 keys + 9 gaps. Container is 90vw.
+   key = (90vw - 2×padding - 9×gap) / 10, capped at 58px. */
+.keyboard {
+  --key-gap: clamp(4px, 0.5vw, 8px);
+  --key-size: clamp(28px, calc((90vw - 48px - 9 * var(--key-gap)) / 10), 58px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--key-gap);
+  background: #c8c8c8;
+  padding: clamp(12px, 1.5vw, 24px);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: var(--key-gap);
+  justify-content: center;
+}
+
+.keyboard-row-2 {
+  padding-left: calc(var(--key-size) * 0.3);
+}
+
+.keyboard-row-3 {
+  padding-left: calc(var(--key-size) * 0.7);
+}
+
+.key {
+  width: var(--key-size);
+  height: var(--key-size);
+  border-radius: clamp(4px, 0.4vw, 7px);
+  border: none;
+  font-size: calc(var(--key-size) * 0.28);
+  font-weight: 600;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  cursor: default;
+  transition: background 150ms ease, transform 150ms ease, box-shadow 150ms ease, color 150ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* Dead keys */
+.key:disabled {
+  background: #3a3a3a;
+  color: #666;
+  box-shadow: 0 3px 0 #1a1a1a;
+  cursor: default;
+}
+
+/* Hot keys */
+.key[data-hot] {
+  background: #2c2c2c;
+  color: #e8e8e8;
+  box-shadow: 0 3px 0 #111, 0 0 8px rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.key[data-hot]:hover {
+  background: #484848;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 #111, 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.key[data-hot]:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 #111;
+}
+
+/* Active key */
+.key[data-active] {
+  background: #f0f0f0;
+  color: #111;
+  box-shadow: 0 1px 0 #999, 0 0 12px rgba(255, 255, 255, 0.6);
+  transform: translateY(2px);
+}
+
+.key[data-active]:hover {
+  background: #ffffff;
+  color: #111;
+  transform: translateY(0);
+}
+
+/* Category highlight */
+.key[data-category-highlight] {
+  background: #3d5a80;
+  color: #e0e8f5;
+  box-shadow: 0 3px 0 #1a2d40, 0 0 12px rgba(100, 160, 255, 0.4);
+  animation: category-pulse 1.5s ease-in-out infinite;
+}
+
+.key[data-category-highlight]:hover {
+  background: #4e6f9e;
+  color: #ffffff;
+  transform: translateY(-2px);
+  animation: none;
+}
+
+@keyframes category-pulse {
+  0%, 100% { box-shadow: 0 3px 0 #1a2d40, 0 0 12px rgba(100, 160, 255, 0.4); }
+  50%       { box-shadow: 0 3px 0 #1a2d40, 0 0 20px rgba(100, 160, 255, 0.7); }
+}

@@ -1,16 +1,20 @@
-import { Link } from "react-scroll";
 import "./navBar.css";
 
-function Navbar() {
+function Navbar({ onCategoryClick }) {
+  const categories = ["projects", "work", "leadership", "extras"];
+
   return (
     <nav className="navBar">
       <h1 className="name">c l a r a &nbsp;&nbsp;d e l z e l l</h1>
       <ul className="navLinks">
-        {["projects", "work", "leadership", "extras"].map((item) => (
+        {categories.map((item) => (
           <p key={item}>
-            <Link to={item} smooth={true} duration={500}>
+            <span
+              className="nav-link"
+              onClick={() => onCategoryClick?.(item)}
+            >
               {item}
-            </Link>
+            </span>
           </p>
         ))}
       </ul>
