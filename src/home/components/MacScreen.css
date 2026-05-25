@@ -1,6 +1,6 @@
 .mac-screen {
   width: 100%;
-  height: clamp(280px, 42vh, 520px);
+  height: clamp(320px, 55vh, 620px);
   border-radius: 8px;
   background: #fff;
   border: 1px solid #ccc;
@@ -85,6 +85,9 @@
   display: flex;
   width: 100%;
   height: 100%;
+  padding: clamp(10px, 1.2vw, 18px);
+  box-sizing: border-box;
+  gap: clamp(10px, 1.2vw, 18px);
 }
 
 .mac-img {
@@ -92,10 +95,10 @@
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
+  border-radius: 4px;
 }
 
 .mac-info {
-  padding: clamp(12px, 1.5vw, 24px);
   display: flex;
   flex-direction: column;
   gap: 8px;
