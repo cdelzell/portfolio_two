@@ -1,7 +1,7 @@
 import "./navBar.css";
 
 function Navbar({ onCategoryClick }) {
-  const categories = ["projects", "work", "leadership", "extras"];
+  const categories = ["projects", "work", "leadership"];
 
   return (
     <nav className="navBar">

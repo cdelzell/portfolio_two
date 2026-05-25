@@ -8,6 +8,12 @@ import salt from '/assets/experiences/salt.png';
 import nhri from '/assets/experiences/nhri.png';
 
 export const EXPERIENCES = {
+  R: {
+    name: 'Resume 📄',
+    type: 'pdf',
+    pdfSrc: `${import.meta.env.BASE_URL}resume.pdf`,
+    category: 'resume',
+  },
   T: {
     name: 'Ticket to Ride 🚂',
     blurb: 'Essentially a crash course in how to create a full stack web application while getting to work with a great team!',

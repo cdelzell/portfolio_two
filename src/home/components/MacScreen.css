@@ -80,6 +80,13 @@
   50%       { opacity: 0; }
 }
 
+/* ── PDF view ── */
+.mac-pdf {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* ── Mac window content (experience view) ── */
 .mac-content {
   display: flex;

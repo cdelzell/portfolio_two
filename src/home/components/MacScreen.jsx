@@ -44,7 +44,13 @@ function MacScreen({ activeKey, experiences }) {
         {experience && <span className="mac-window-title">{experience.name}</span>}
       </div>
       <div className="mac-body">
-        {experience ? (
+        {experience?.type === 'pdf' ? (
+          <iframe
+            className="mac-pdf"
+            src={experience.pdfSrc}
+            title={experience.name}
+          />
+        ) : experience ? (
           <div className="mac-content">
             <img className="mac-img" src={experience.image} alt={experience.name} />
             <div className="mac-info">
